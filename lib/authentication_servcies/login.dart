@@ -39,7 +39,6 @@ class LoginState extends State<Login> {
       }
     } catch (e) {
       displayIssue(e.toString());
-      print(e);
     }
   }
 

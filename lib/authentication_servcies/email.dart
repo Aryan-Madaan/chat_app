@@ -24,7 +24,6 @@ class EmailState extends State<Email> {
     email = user!.email;
     _controller.text = email!;
     isVisible = user!.emailVerified;
-    print(user!.metadata);
   }
 
   @override

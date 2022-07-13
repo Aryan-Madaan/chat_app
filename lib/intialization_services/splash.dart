@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:chat_app/authentication_servcies/login.dart';
 import 'package:chat_app/chat_services/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> {
       }));
     } else {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-        return const Home();
+        return const Login();
       }));
     }
   }
